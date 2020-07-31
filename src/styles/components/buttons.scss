@@ -1,0 +1,28 @@
+.btn{
+    border: none;
+    border-radius: 20px;
+    padding: 1.3em 1em;
+    color: darken($color: #fff, $amount: 8);
+    font-size: .5em;
+    background-color: $primary;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    // text-align: center;
+    transition: background-color .3s ease,
+                transform .3s ease;
+    &--block{
+        display: block;
+        width: 100%;
+    }
+    &:focus{
+        outline: 0;
+    }
+    &:active{
+        transform: scale(1.1);
+    }
+    &:hover{
+        background-color: darken($color: $primary, $amount: 10);
+    }
+}
+

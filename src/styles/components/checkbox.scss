@@ -1,0 +1,27 @@
+.input-checkbox{
+    display: flex;
+    align-items: center;
+    color: black;
+    &__check{
+        border: solid 2px $primary;
+        height: 10px;
+        width: 10px;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        -o-appearance:none; 
+        appearance: none;
+        &:checked{
+            background-color: $primary;
+        }
+        &:focus{
+            outline: 0;
+        }
+    }
+    &--right{
+        justify-content: flex-end;
+    }
+    &__label{
+        font-size: .6em;
+        margin-left: .3rem;
+    }
+}
